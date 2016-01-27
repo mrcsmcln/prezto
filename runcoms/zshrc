@@ -11,3 +11,16 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+export PATH=$PATH:~/bin:~/.composer/vendor/bin
+
+export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+
+alias c='clear'
+alias ls='ls -AFGhlp'
+alias mkdir='mkdir -p'
+alias brrr="yes > /dev/null & yes > /dev/null & yes > /dev/null & yes > /dev/null &"
+alias ahhh="killall yes"
+alias crush="pngcrush -rem allb -brute -reduce"
+alias del="trash"
+alias homestead='function __homestead() { (cd ~/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
+
