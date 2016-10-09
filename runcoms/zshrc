@@ -15,15 +15,9 @@ export PATH=~/bin:~/.composer/vendor/bin:/usr/local/bin:$PATH
 
 alias c='clear'
 alias ls='ls -AFGhlp'
+alias mkdir='mkdir -p'
 alias brrr="yes > /dev/null & yes > /dev/null & yes > /dev/null & yes > /dev/null &"
 alias ahhh="killall yes"
 alias crush="pngcrush -rem allb -brute -reduce"
 alias del="trash"
-alias lorem="lorem-ipsum"
-
 alias homestead='function __homestead() { (cd ~/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
-alias phpunit='vendor/bin/phpunit'
-
-alias watch='gulp watch'
-alias prod="NODE_ENV='production' gulp --production"
-#alias site='function __site() { mkdir ~/Sites/$1; mysql -e "CREATE DATABASE $1;"; valet secure $1; unset -f __site; }; __site'
